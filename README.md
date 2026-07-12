@@ -1,181 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Borneo Intellects NextGen</title>
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
-<header>
-
-<nav>
-
-<h2>Borneo Intellects NextGen</h2>
-
-<ul>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#services">Services</a></li>
-
-<li><a href="#market">Market</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
-<div class="hero">
-
-<h1>Authentic. Productive. Empowering.</h1>
-
-<p>Bringing Borneo's Smartest Spaces to the Next Generation.</p>
-
-<a href="#services" class="btn">Explore</a>
-
-</div>
-
-</header>
-
-<section id="about">
-
-<h2>About Us</h2>
-
-<p>
-
-Borneo Intellects NextGen is a digital platform that connects students
-and young professionals with smart study and co-working spaces.
-
-Our mission is to provide affordable, productive, and technology-driven
-workspaces that support learning, collaboration, and innovation.
-
-</p>
-
-</section>
-
-<section id="services">
-
-<h2>Our Spaces</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="images/study-zone.jpg">
-
-<h3>Study Zone</h3>
-
-<p>Quiet booths for individual study and maximum concentration.</p>
-
-</div>
-
-<div class="card">
-
-<img src="images/coworking.jpg">
-
-<h3>Co-working Space</h3>
-
-<p>Open workspace for students, freelancers, and remote workers.</p>
-
-</div>
-
-<div class="card">
-
-<img src="images/discussion-room.jpg">
-
-<h3>Discussion Room</h3>
-
-<p>Private rooms equipped with smart screens for group projects.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="market">
-
-<h2>Market Opportunity</h2>
-
-<ul>
-
-<li>30,000+ university students across Borneo.</li>
-
-<li>Increasing demand for study spaces.</li>
-
-<li>Growth in hybrid learning.</li>
-
-<li>Affordable hourly rental model.</li>
-
-</ul>
-
-</section>
-
-<section>
-
-<h2>Why Choose Us?</h2>
-
-<div class="features">
-
-<div>
-
-<h3>Affordable</h3>
-
-<p>Hourly, daily and monthly packages.</p>
-
-</div>
-
-<div>
-
-<h3>Easy Booking</h3>
-
-<p>Book a study room in less than one minute.</p>
-
-</div>
-
-<div>
-
-<h3>Cashless</h3>
-
-<p>Digital payment integration.</p>
-
-</div>
-
-<div>
-
-<h3>Smart Technology</h3>
-
-<p>Cloud managed smart workspace.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>Email: info@borneonextgen.com</p>
-
-<p>Sibu, Sarawak, Malaysia</p>
-
-</section>
-
-<footer>
-
-<p>© 2026 Borneo Intellects NextGen</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f7f4ef;
+color:#333;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#8c7b68;
+color:white;
+position:sticky;
+top:0;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url(images/coworking.jpg);
+background-size:cover;
+color:white;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.btn{
+padding:15px 35px;
+background:#b08d57;
+color:white;
+text-decoration:none;
+margin-top:20px;
+border-radius:30px;
+}
+
+section{
+padding:80px 10%;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 0 15px rgba(0,0,0,.1);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.features div{
+background:white;
+padding:25px;
+border-radius:10px;
+text-align:center;
+}
+
+footer{
+background:#8c7b68;
+color:white;
+text-align:center;
+padding:30px;
+}
